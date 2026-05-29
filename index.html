@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will you go out with me? 🥺</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- Confetti canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Pleader message popup -->
+    <div id="plead-msg" class="plead-msg"></div>
+
+    <div class="wrapper">
+      <h2 class="question">Will you go out with me?</h2>
+      <img class="gif" alt="gif" src="https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif" />
+
+      <!-- Buttons -->
+      <div class="btn-group" id="btn-group">
+        <button class="yes-btn">Yes</button>
+        <button class="no-btn">No</button>
+      </div>
+
+      <!-- Date form (hidden initially) -->
+      <div class="date-form" id="date-form">
+        <p class="form-title">Now let's plan it 😏</p>
+
+        <div class="form-field">
+          <label>💬 Any cute nickname I should call you?</label>
+          <div class="choices" style="margin-bottom: 8px;">
+            <button type="button" class="choice-btn" data-group="nickname" data-val="Babe">Babe 😘</button>
+            <button type="button" class="choice-btn" data-group="nickname" data-val="Honey">Honey 🍯</button>
+            <button type="button" class="choice-btn" data-group="nickname" data-val="Jaan">Jaan 💖</button>
+            <button type="button" class="choice-btn" data-group="nickname" data-val="Jaanu">Jaanu 🥰</button>
+            <button type="button" class="choice-btn" data-group="nickname" data-val="Love">Love 💕</button>
+          </div>
+          <input type="text" id="nickname" placeholder="or type your own..." maxlength="30" />
+        </div>
+
+        <div class="form-field">
+          <label>📅 Pick a date</label>
+          <input type="date" id="pick-date" />
+        </div>
+
+        <div class="form-field">
+          <label>🍽️ What do you wanna eat?</label>
+          <div class="choices" id="food-choices">
+            <button type="button" class="choice-btn" data-group="food" data-val="Desi">Desi 🍛</button>
+            <button type="button" class="choice-btn" data-group="food" data-val="Burgers">Burgers 🍔</button>
+            <button type="button" class="choice-btn" data-group="food" data-val="Pizza">Pizza 🍕</button>
+            <button type="button" class="choice-btn" data-group="food" data-val="Shawarma">Shawarma 🌯</button>
+            <button type="button" class="choice-btn" data-group="food" data-val="Fried Chicken">Fried Chicken 🍗</button>
+            <button type="button" class="choice-btn" data-group="food" data-val="Surprise me">Surprise me 🤫</button>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label>📍 Where should we go?</label>
+          <div class="choices">
+            <button type="button" class="choice-btn" data-group="place" data-val="Fancy restaurant">Fancy restaurant ✨</button>
+            <button type="button" class="choice-btn" data-group="place" data-val="Dhaba vibes">Dhaba vibes 🪑</button>
+            <button type="button" class="choice-btn" data-group="place" data-val="Cafe">Cafe ☕</button>
+            <button type="button" class="choice-btn" data-group="place" data-val="Food street">Food street 🌃</button>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label>💋 Your move or mine?</label>
+          <div class="choices">
+            <button type="button" class="choice-btn" data-group="planner" data-val="You plan it">You plan it</button>
+            <button type="button" class="choice-btn" data-group="planner" data-val="I'll plan it">I'll plan it</button>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label>🌙 Day date or night date?</label>
+          <div class="choices">
+            <button type="button" class="choice-btn" data-group="time" data-val="Day">Day ☀️</button>
+            <button type="button" class="choice-btn" data-group="time" data-val="Night">Night 🌙</button>
+          </div>
+        </div>
+
+        <button type="button" class="lock-btn" id="lock-btn">Lock it in! 🔒</button>
+        <p class="form-note" id="form-note"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

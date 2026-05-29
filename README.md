@@ -1,2 +1,33 @@
-# AskingOutOnDate
-Will You Go Out With Me? 💘  A fun &amp; dramatic way to ask someone out. The "No" button runs away and pleads every time you try to click it. Say "Yes" and confetti flies — then plan the date right there: pick a day, food, vibe, and a nickname. All responses land in your inbox via Formspree.  Built with: HTML · CSS · Vanilla JS
+# Will you go out with me?
+
+## Overview
+
+**Will you go out with me** is a simple and playful project that adds a twist to the typical decision-making process. This project allows users to invite their friends to go out through a web interface. The catch? Saying "NO" becomes a bit challenging and amusing!
+
+## Technologies Used
+
+- **HTML:** Structuring the web page.
+- **CSS:** Styling the elements and creating hover effects.
+- **JavaScript:** Implementing the interactive behavior and managing button clicks.
+
+## How to Use
+
+1. Clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/hallowshaw/Will-you-go-out-with-me.git
+   ```
+2. Open the index.html file in your web browser.
+
+3. Interact with the buttons and experience the playful decision-making process!
+
+## Demo
+
+https://hallowshaw.github.io/Will-you-go-out-with-me/
+
+## Contributing 
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests to enhance the project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
