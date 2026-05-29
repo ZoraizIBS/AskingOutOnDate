@@ -18,28 +18,22 @@
     <div id="plead-msg" class="plead-msg"></div>
 
     <div class="wrapper">
-      <h2 class="question">Will you go out with me?</h2>
+      <h2 class="question"></h2>
       <img class="gif" alt="gif" src="https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif" />
 
       <!-- Buttons -->
       <div class="btn-group" id="btn-group">
-        <button class="yes-btn">Yes</button>
-        <button class="no-btn">No</button>
+        <button class="yes-btn"></button>
+        <button class="no-btn"></button>
       </div>
 
       <!-- Date form (hidden initially) -->
       <div class="date-form" id="date-form">
-        <p class="form-title">Now let's plan it 😏</p>
+        <p class="form-title"></p>
 
         <div class="form-field">
           <label>💬 Any cute nickname I should call you?</label>
-          <div class="choices" style="margin-bottom: 8px;">
-            <button type="button" class="choice-btn" data-group="nickname" data-val="Babe">Babe 😘</button>
-            <button type="button" class="choice-btn" data-group="nickname" data-val="Honey">Honey 🍯</button>
-            <button type="button" class="choice-btn" data-group="nickname" data-val="Jaan">Jaan 💖</button>
-            <button type="button" class="choice-btn" data-group="nickname" data-val="Jaanu">Jaanu 🥰</button>
-            <button type="button" class="choice-btn" data-group="nickname" data-val="Love">Love 💕</button>
-          </div>
+          <div class="choices" id="nickname-choices"></div>
           <input type="text" id="nickname" placeholder="or type your own..." maxlength="30" />
         </div>
 
@@ -50,24 +44,12 @@
 
         <div class="form-field">
           <label>🍽️ What do you wanna eat?</label>
-          <div class="choices" id="food-choices">
-            <button type="button" class="choice-btn" data-group="food" data-val="Desi">Desi 🍛</button>
-            <button type="button" class="choice-btn" data-group="food" data-val="Burgers">Burgers 🍔</button>
-            <button type="button" class="choice-btn" data-group="food" data-val="Pizza">Pizza 🍕</button>
-            <button type="button" class="choice-btn" data-group="food" data-val="Shawarma">Shawarma 🌯</button>
-            <button type="button" class="choice-btn" data-group="food" data-val="Fried Chicken">Fried Chicken 🍗</button>
-            <button type="button" class="choice-btn" data-group="food" data-val="Surprise me">Surprise me 🤫</button>
-          </div>
+          <div class="choices" id="food-choices"></div>
         </div>
 
         <div class="form-field">
           <label>📍 Where should we go?</label>
-          <div class="choices">
-            <button type="button" class="choice-btn" data-group="place" data-val="Fancy restaurant">Fancy restaurant ✨</button>
-            <button type="button" class="choice-btn" data-group="place" data-val="Dhaba vibes">Dhaba vibes 🪑</button>
-            <button type="button" class="choice-btn" data-group="place" data-val="Cafe">Cafe ☕</button>
-            <button type="button" class="choice-btn" data-group="place" data-val="Food street">Food street 🌃</button>
-          </div>
+          <div class="choices" id="place-choices"></div>
         </div>
 
         <div class="form-field">
@@ -91,6 +73,7 @@
       </div>
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
